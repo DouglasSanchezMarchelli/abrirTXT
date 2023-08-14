@@ -1,0 +1,216 @@
+
+Librería IO :
+Propósito: Implementa E/S de archivos y proporciona clases para trabajar con búfers utilizando interfaz de programación de tipo archivo
+El módulo io implementa las clases detrás de la función open() incorporada del intérprete para operaciones de entrada y salida basadas en archivos. Las clases se descomponen de tal manera que pueden ser recombinadas para fines alternativos, por ejemplo, para permitir la escritura de datos Unicode en un conector de red.
+
+Transmisiones en memoria
+StringIO proporciona un medio conveniente para trabajar con texto en memoria utilizando la interfaz de programación de archivo (read(), write(), etc.). Utilizar StringIO para construir cadenas grandes puede ofrecer ahorros en el rendimiento obre algunas otras técnicas de concatenación de cuerdas en algunos casos. Los búfers de flujo en memoria también son útiles para pruebas, donde escribir en un archivo real en el disco puede ralentizar el conjunto de pruebas.
+
+Aquí hay algunos ejemplos estándar del uso de búfers StringIO:
+
+
+
+
+Las principales librerías que ayudan a interactuar con el sistema operativo Android y iOS son:
+
+
+
+
+
+Para Android:
+
+1. Android SDK (Software Development Kit): Es la librería principal para el desarrollo de aplicaciones en Android. Proporciona herramientas y kits de desarrollo específicos para la plataforma Android.
+
+2. Android Support Library: Esta biblioteca proporciona compatibilidad hacia atrás para versiones antiguas de Android a través de la compatibilidad con API, lo que significa que los desarrolladores pueden crear aplicaciones que funcionen en versiones antiguas de Android, así como en la última versión.
+
+3. Retrofit: Es una librería de cliente HTTP de tipo RESTful que se utiliza para simplificar la conexión de una aplicación Android con una API REST.
+
+Para iOS:
+
+1. UIKit: Es la librería principal de UI (interfaz de usuario) para iOS. UIKit proporciona las clases necesarias para construir interfaces de usuario, incluyendo controles, vistas, tablas y colecciones.
+
+2. Core Data: Es una librería de marco de trabajo que se utiliza para crear, leer y guardar datos estructurados. Es utilizado frecuentemente para almacenar la información de las aplicaciones.
+
+3. Alamofire: Es una librería popular de cliente HTTP para iOS. Se utiliza para trabajar con servicios web y simplificar la conexión de una aplicación iOS con una API REST.
+
+Cabe destacar que existen muchas otras librerías útiles para el desarrollo en Android e iOS, pero éstas son algunas de las principales y más utilizadas en la actualidad.
+
+
+
+System.IO Espacio de nombres
+Referencia
+Contiene tipos que permiten leer y escribir en los archivos y secuencias de datos, así como tipos que proporcionan compatibilidad básica con los archivos y directorios.
+
+Clases
+BinaryReader	
+Lee tipos de datos primitivos como valores binarios en una codificación específica.
+
+BinaryWriter	
+Escribe tipos primitivos en formato binario en una secuencia y admite la escritura de cadenas en una codificación específica.
+
+BufferedStream	
+Agrega una capa de almacenamiento en búfer para las operaciones de lectura y escritura en otra secuencia. Esta clase no puede heredarse.
+
+Directory	
+Expone métodos estáticos para crear, mover y enumerar archivos en directorios y subdirectorios. Esta clase no puede heredarse.
+
+DirectoryInfo	
+Expone métodos de instancia para crear, mover y enumerar archivos en directorios y subdirectorios. Esta clase no puede heredarse.
+
+DirectoryNotFoundException	
+Excepción que se produce cuando no se encuentra parte de un archivo o de un directorio.
+
+DriveInfo	
+Proporciona acceso a información sobre una unidad.
+
+DriveNotFoundException	
+Excepción que se produce al intentar obtener acceso a una unidad o un recurso compartido que no está disponible.
+
+EndOfStreamException	
+Excepción que se produce cuando se intenta leer después del final de una secuencia.
+
+EnumerationOptions	
+Proporciona opciones de enumeración de archivos y directorios.
+
+ErrorEventArgs	
+Proporciona datos para el evento Error.
+
+File	
+Proporciona métodos estáticos para crear, copiar, eliminar, mover y abrir un solo archivo, y contribuye a la creación de objetos FileStream.
+
+FileInfo	
+Proporciona propiedades y métodos de instancia para crear, copiar, eliminar, mover y abrir archivos y contribuye a la creación de objetos FileStream. Esta clase no puede heredarse.
+
+FileLoadException	
+Excepción que se produce cuando se encuentra un ensamblado administrado pero no se puede cargar.
+
+FileNotFoundException	
+Excepción que se produce cuando hay un error al intentar acceder a un archivo que no existe en el disco.
+
+FileStream	
+Proporciona un Stream para un archivo, lo que permite operaciones de lectura y escritura sincrónica y asincrónica.
+
+FileStreamOptions	
+Define una variedad de opciones de configuración para FileStream.
+
+FileSystemAclExtensions	
+Proporciona métodos de extensión estáticos específicos de Windows para manipular atributos de seguridad de la lista de control de acceso (ACL) para los archivos y directorios.
+
+FileSystemEventArgs	
+Proporciona datos para los eventos de directorio Changed, Created y Deleted.
+
+FileSystemInfo	
+Proporciona la clase base para los objetos FileInfo y DirectoryInfo.
+
+FileSystemWatcher	
+Escucha las notificaciones de cambio del sistema de archivos y genera eventos cuando cambia un directorio o un archivo de un directorio.
+
+InternalBufferOverflowException	
+Excepción que se produce cuando el búfer interno se desborda.
+
+InvalidDataException	
+Excepción que se produce cuando una secuencia de datos tiene un formato no válido.
+
+IOException	
+Excepción que se produce cuando hay un error de E/S.
+
+MemoryStream	
+Crea una secuencia cuya memoria auxiliar es la memoria.
+
+Path	
+Ejecuta operaciones en instancias de String que contienen información de rutas de acceso de archivos o directorios. Estas operaciones se ejecutan de forma adecuada para múltiples plataformas.
+
+PathTooLongException	
+Excepción que se produce cuando la longitud de una ruta de acceso o un nombre de archivo completo supera la longitud máxima definida por el sistema.
+
+RandomAccess	
+Proporciona API basadas en desplazamiento para leer y escribir archivos de forma segura para subprocesos.
+
+RenamedEventArgs	
+Proporciona datos para el evento Renamed.
+
+Stream	
+Proporciona una vista genérica de una secuencia de bytes. Esta es una clase abstracta.
+
+StreamReader	
+Implementa un TextReader que lee los caracteres de una secuencia de bytes en una codificación determinada.
+
+StreamWriter	
+Implementa TextWriter para escribir los caracteres de una secuencia en una codificación determinada.
+
+StringReader	
+Implementa TextReader que lee en una cadena.
+
+StringWriter	
+Implementa un TextWriter para escribir información en una cadena. La información se almacena en un StringBuilder subyacente.
+
+TextReader	
+Representa un lector que puede leer una serie secuencial de caracteres.
+
+TextWriter	
+Representa un sistema de escritura que puede escribir una serie secuencial de caracteres. Esta clase es abstracta.
+
+UnmanagedMemoryAccessor	
+Proporciona acceso aleatorio a bloques de memoria no administrada desde código administrado.
+
+UnmanagedMemoryStream	
+Proporciona acceso a los bloques de memoria no administrada desde el código administrado.
+
+Estructuras
+WaitForChangedResult	
+Contiene información acerca del cambio producido.
+
+Enumeraciones
+DriveType	
+Define las constantes de los tipos de unidad, incluyendo CDRom, Fixed, Network, NoRootDirectory, Ram, Removable y Unknown.
+
+FileAccess	
+Define constantes de acceso de lectura, de escritura y de lectura/escritura para un archivo.
+
+FileAttributes	
+Proporciona los atributos para archivos y directorios.
+
+FileMode	
+Especifica cómo el sistema operativo debe abrir un archivo.
+
+FileOptions	
+Representa opciones avanzadas para crear un objeto FileStream.
+
+FileShare	
+Contiene constantes para controlar el tipo de acceso que otras operaciones pueden tener en el mismo archivo.
+
+HandleInheritability	
+Especifica si los procesos secundarios pueden heredar el controlador subyacente.
+
+MatchCasing	
+Especifica el tipo de distinción de mayúsculas y minúsculas de caracteres que se va a comparar.
+
+MatchType	
+Especifica el tipo de coincidencia de caracteres comodín que se va a usar.
+
+NotifyFilters	
+Especifica los cambios que se van a buscar en un archivo o una carpeta.
+
+SearchOption	
+Especifica si se va a buscar en el directorio actual, o bien, en el directorio actual y en todos los subdirectorios.
+
+SeekOrigin	
+Especifica la posición usada para buscar en una secuencia.
+
+UnixFileMode	
+Representa los permisos del sistema de archivos unix.
+
+Esta enumeración admite una combinación bit a bit de sus valores de miembro.
+
+WatcherChangeTypes	
+Cambios que pueden producirse en un archivo o directorio.
+
+Delegados
+ErrorEventHandler	
+Representa el método que controlará el evento Error de un objeto FileSystemWatcher.
+
+FileSystemEventHandler	
+Representa el método que controlará el evento Changed, Created o Deleted de una clase FileSystemWatcher.
+
+RenamedEventHandler	
+Representa el método que controlará el evento Renamed de una clase FileSystemWatcher.
